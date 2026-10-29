@@ -1,13 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>model-viewer</title>
+    <title>Model Viewer</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <canvas id="viewport"></canvas>
+
+      <div id="dropzone">
+        <p><strong>Arraste o arquivo .fbx</strong> aqui (e a textura, opcional)</p>
+        <p class="hint">ou clique para escolher os arquivos</p>
+        <input id="file-input" type="file" accept=".fbx,image/*" multiple hidden />
+      </div>
+
+      <div id="hud">
+        <div id="stats"></div>
+        <div id="toolbar">
+          <button id="btn-wireframe" title="Alternar wireframe">Wireframe</button>
+          <button id="btn-autorotate" title="Rotação automática">Auto-rotar</button>
+          <button id="btn-reset" title="Resetar câmera">Resetar câmera</button>
+          <button id="btn-clear" title="Remover modelo">Remover modelo</button>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

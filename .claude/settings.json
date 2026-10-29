@@ -1,0 +1,20 @@
+{
+  "skillOverrides": {
+    "novo-modelo": "off",
+    "referencias": "off",
+    "retomar": "off",
+    "salvar": "off",
+    "anthropic-skills:docx": "off",
+    "anthropic-skills:pptx": "off",
+    "anthropic-skills:xlsx": "off",
+    "anthropic-skills:pdf": "off",
+    "anthropic-skills:google-workspace": "off",
+    "anthropic-skills:artifact-emulator": "off",
+    "anthropic-skills:morning": "off",
+    "anthropic-skills:consolidate-memory": "off",
+    "anthropic-skills:import-memory": "off",
+    "anthropic-skills:setup-claude": "off",
+    "anthropic-skills:skill-creator": "off",
+    "keybindings-help": "off"
+  }
+}
